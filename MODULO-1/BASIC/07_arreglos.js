@@ -78,6 +78,56 @@ numerosDesordenados.push(1012);
 
 
 var pares = [2, 4, 6, 8, 10 ]
-console.log(pares.map((elemento)=> elemento+1));
+// console.log(pares.map((elemento)=> elemento+1));
 
 // consultar funciones arrlegos
+
+/*
+
+Filter
+
+*/
+
+var arr = [1, 2, 3, 4, 5, 6];
+
+var filtrado = arr.filter(num => num > 3);
+// console.log(filtrado);
+// console.log(arr)
+
+/*
+
+some
+
+*/
+
+var arr = [1, 2, 3, 4, 5, 6];
+var numeroLargo = arr.some(num => num > 4);
+console.log(numeroLargo);
+
+/*
+
+every
+
+
+*/
+
+var arr = [1, 2, 3, 4, 5, 6];
+var numeroCuatro = arr.every(num => num > 4);
+console.log(numeroCuatro);
+
+/*
+
+form
+
+*/
+
+console.log(Array.from('foo'));
+
+/*
+
+array.of
+
+*/
+
+var nums = Array.of(1, 2, 3, 4, 5, 6);
+console.log(nums);

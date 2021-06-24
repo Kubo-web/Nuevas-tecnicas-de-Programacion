@@ -4,15 +4,19 @@
   "description": "Uso de NPM",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon"
+
   },
   "keywords": [
     "practica",
-    "npm"
+    "NPM"
   ],
   "author": "Juan Ortiz",
   "license": "MIT",
   "dependencies": {
     "express": "4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.7"
   }
 }

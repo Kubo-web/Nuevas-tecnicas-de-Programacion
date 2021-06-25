@@ -7,6 +7,31 @@ const { Router } = require('express');
 const router = Router()
 
 //creacion de los endpoint
+router
+    .get("/",(req, res) => {
+    res.send("Hola mundo con ExpressJS");
+    })
+    .get("/users", (req, res)=>{
+        res.json({
+            msg:"Lista de usuarios",
+            body: data,
+        });
+    })
+    .get("/saludo",(req, res) =>{
+
+        const { query: {nombre, apellido} } = req;
+        res.json({
+            saludo: `Hola soy ${nombre} ${apellido}`,
+        });
+    })
+    .get('/saludo/:nombre', (req, res) =>{
+        const { params: { nombre } } = req
+        console.log(req.params);
+        res.json({
+            nombre: nombre,
+        })
+    })
+
 
 
 //exportamos la rutas

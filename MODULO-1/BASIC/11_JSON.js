@@ -14,4 +14,3 @@ var filterResult = modifiedData.filter((person) => person.id === 3)
 
 console.log(filterResult);
 
-
